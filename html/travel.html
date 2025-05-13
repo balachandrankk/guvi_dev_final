@@ -1,0 +1,262 @@
+<html>
+  <head>
+    <title>Blogz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .scroll{
+	max-height:485px;
+	overflow-y:auto;
+	scrollbar-width:none;
+      }
+    </style>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light" >
+        <div class="container-fluid">
+          <a href="#"><img class="navbar-brand mx-1" style="width:58px;height:49px;" src="logo.jpg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-1">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary text-light nav-link" role="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Blogs</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#categories">Recent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact us.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign In
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex py-1" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Offcanvas -->
+     
+    <div class="offcanvas offcanvas-lg offcanvas-start" id="demo">
+       <div class="offcanvas-header">
+           <p class="h2">Blogs</p>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+       </div>
+       <div class="offcanvas-body">
+          <form class="d-flex py-1">
+	  <i class="bi bi-search"></i>
+              <input class="form-control me-2" type="search" placeholder="Seach blogs">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+           </form>
+           <div class="col-lg-25 m-auto">
+	  <div class="card " style="border:none;">
+                 <div class="card-header p-3 text-light bg-secondary">
+                   <p class="h4 mx-1">Popular Blogs</p>
+                 </div>
+                 <div class="card-body scroll">
+                    <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="education.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="education.html">Education Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="art.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="art.html">Art Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="fitness.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="fitness.html">Fitness Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="entrepreneur.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="entrepreneur.html">Entrepreneur Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="travel.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="travel.html">Travel Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="food.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="food.html">Food Blog</a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+       </div>
+    </div>
+
+    <!-- end offcanvas -->
+<div class="container py-5 mt-5">
+  <p class="h2 fw-bolder text-center">Travel Blog</p>
+  <p class="h4 mx-3">Popular bloggers</p>
+  <div class="container my-4">
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p1.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch1.html">Pat Flynn</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p2.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch2.html">Ariana</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p3.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch3.html">Seth Godlin</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p4.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch4.html">Scott Patel</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p5.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch5.html">Joanna</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body bg-light">
+                <img src="p6.png" class="rounded-circle " alt="Profile 1" style="width:150px;height:150px;"><p></p>
+                <a class="card-link float-center h4 text-dark text-decoration-none" href="travel_ch6.html">Emily hale</a>
+                <p class="card-text mt-3">100k followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<p class="h4 p-2 mx-1">Blog posts</p>
+<div class="container mt-2">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr1.jpg" class="card-img-top" alt="Image 1" style="width:406px;height:300px;">
+          <div class="card-body">
+            <h5 class="card-title bg-light">Exploring Majestic Rocks</h5>
+            <p class="card-text"> Discover the unique rock formations that define the landscape of various destinations. From towering spires to ancient rock carvings, each location offers its own geological wonders.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr2.jpg" class="card-img-top" alt="Image 2" style="width:406px;height:300px;">
+          <div class="card-body">
+            <h5 class="card-title bg-light">Soaring Above the Clouds</h5>
+            <p class="card-text"> A Plane Journey Experience the thrill of air travel and the breathtaking views from above. Learn about the best window seats and in-flight amenities to enhance your journey.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr3.jpg" class="card-img-top" alt="Image 3" style="width:406px;height:300px;">
+          <div class="card-body bg-light">
+            <h5 class="card-title">Floating in the Skies</h5>
+            <p class="card-text">Air Balloons Adventures Take a ride in a hot air balloon and enjoy panoramic views of stunning landscapes. Perfect for sunrise or sunset trips, this experience offers a serene way to see the world.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr4.jpg" class="card-img-top" alt="Image 4" style="width:406px;height:300px;">
+          <div class="card-body bg-light">
+            <h5 class="card-title">The Allure of the Desert</h5>
+            <p class="card-text"> Explore the vast and stunning deserts around the globe with joy. From golden sand dunes to unique wildlife, discover the beauty and challenges of desert travel.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr5.jpg" class="card-img-top" alt="Image 5" style="width:406px;height:300px;">
+          <div class="card-body bg-light">
+            <h5 class="card-title">Sun, Sand, and Sea</h5>
+            <p class="card-text">Beach Getaways Relax on some of the world’s most beautiful beaches. Whether you prefer secluded coves or bustling coastal cities, there’s a perfect beach for every traveler.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="tr6.jpg" class="card-img-top" alt="Image 6" style="width:406px;height:300px;">
+          <div class="card-body bg-light">
+            <h5 class="card-title">Tranquility on the Water</h5>
+            <p class="card-text"> Boat Trips and Lakes Unwind on serene lake cruises or adventurous boat rides. Explore picturesque lakeside towns and enjoy the peacefulness of water-based activities.</p>
+	  <button class="btn btn-outline-primary float-end btn-sm">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

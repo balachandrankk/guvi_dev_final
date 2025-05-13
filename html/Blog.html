@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <title>Blogz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .scroll {
+        max-height: 485px;
+        overflow-y: auto;
+        scrollbar-width: none;
+      }
+      .icon-toolbar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .icon-toolbar i {
+        margin: 0 10px;
+      }
+      .icon-toolbar hr {
+        border: none;
+        border-left: 1px solid #ccc;
+        height: 24px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light">
+      <div class="container-fluid">
+        <a href="#"><img class="navbar-brand mx-1" style="width:58px;height:49px;" src="logo.jpg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-3">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-1">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary text-light nav-link" role="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Blogs</a>
+            </li>
+            <li class="nav-item mx-1">
+              <a class="nav-link" href="#categories">Recent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact us.html">Contact us</a>
+            </li>
+            <li class="nav-item dropdown mx-1">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign In</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex py-1" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="mt-1"><p>efe</p></div>
+
+    <!-- New Editing Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5 ">
+      <div class="container-fluid justify-content-center">
+        <div class="icon-toolbar">
+	<ul class="list-group list-group-horizontal">
+	   <a href="#" class="list-group-item list-group-item-action">Compose</a>
+	   <a href="#" class="list-group-item list-group-item-action">HTML</a>
+	</ul>
+	<hr>
+          <i class="bi bi-arrow-counterclockwise" title="Undo" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-arrow-clockwise" title="Redo" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-type-bold" title="Bold" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-type-italic" title="Italic" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-type-underline" title="Underline" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-text-left" title="Text Alignment" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-list-ul" title="Bullet List" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-list-ol" title="Numbered List" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-link-45deg" title="Link" style="cursor:pointer;"></i>
+          <hr>
+	<i class="bi bi-brush" title="brush" style="cursor:pointer;"></i>
+          <hr>
+	<i class="bi bi-search" title="find" style="cursor:pointer;"></i>
+          <hr>
+	<i class="bi bi-arrow-repeat" title="replace" style="cursor:pointer;"></i>
+          <hr>
+          <select class="form-select form-select-sm mx-2" style="width: auto;" title="Font Family" style="cursor:pointer;">
+            <option selected disabled>Font Family</option>
+            <option value="Poppins">Poppins</option>
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+          </select>
+          <hr>
+          <select class="form-select form-select-sm mx-2" style="width: auto;" title="Font Size" style="cursor:pointer;">
+            <option selected disabled>Font Size</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+          </select>
+          <hr>
+          <i class="bi bi-card-image" title="Add image" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-square-fill" title="Highlight Color" style="cursor:pointer;"></i>
+          <hr>
+          <i class="bi bi-emoji-smile" title="Insert Emoji" style="cursor:pointer;"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-lg offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <p class="h2">Blogs</p>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex py-1">
+          
+          <input class="form-control me-2" type="search" placeholder="Search blogs">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+        <div class="col-lg-25 m-auto">
+          <div class="card" style="border:none;">
+            <div class="card-header p-3 text-light bg-secondary">
+              <p class="h4 mx-1">Popular Blogs</p>
+            </div>
+            <div class="card-body scroll">
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="education.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="education.html">Education Blog</a>
+              </div>
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="art.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="art.html">Art Blog</a>
+              </div>
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="fitness.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="fitness.html">Fitness Blog</a>
+              </div>
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="entrepreneur.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="entrepreneur.html">Entrepreneur Blog</a>
+              </div>
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="travel.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="travel.html">Travel Blog</a>
+              </div>
+              <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+                <img src="food.jpg" class="rounded" style="max-width:25%;">
+                <a class="h6 p-3 mt-2 text-dark text-decoration-none" href="food.html">Food Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end offcanvas -->
+
+    <div class="container py-3"> 
+      <form class="py-1" id="myForm">
+      <div id="alertPlaceholder" ></div>
+      <p class="h5">Add your title</p>
+      <div class="d-flex flex-row">    
+         <input class="form-control mt-2 mb-2 w-25" type="text" required>
+         <select class="form-select form-select-sm mx-3 mt-2" style="width: 300px; height:38px;">
+            <option selected disabled>Select Blog</option>
+            <option value="education">Education</option>
+            <option value="art">Art</option>
+            <option value="fitness">Fitness</option>
+            <option value="entrepreneur">Entrepreneur</option>
+            <option value="travel">Travel</option>
+            <option value="food">Food</option>
+         </select>
+       </div>
+        <textarea class="form-control me-2" rows="14" required></textarea>
+        <button type="submit" class="btn btn-primary mt-2 float-end">Publish</button>
+      </form>
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popper.js/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const alertPlaceholder = document.getElementById('alertPlaceholder');
+        const alert = document.createElement('div');
+        alert.className = 'alert alert-success alert-dismissible fade show';
+        alert.role = 'alert';
+        alert.innerHTML = `
+          <strong>Success!</strong> Your blog post has been published.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        `;
+        alertPlaceholder.appendChild(alert);
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

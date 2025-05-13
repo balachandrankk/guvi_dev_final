@@ -1,0 +1,180 @@
+<html>
+<head>
+    <title>Blogz</title>
+    <style>
+      .scroll{
+	max-height:485px;
+	overflow-y:auto;
+	scrollbar-width:none;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light" >
+        <div class="container-fluid">
+          <a href="#"><img class="navbar-brand mx-1" style="width:58px;height:49px;" src="logo.jpg"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mx-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-1">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary text-light nav-link" role="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Blogs</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="#categories">Recent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact us.html">Contact us</a>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign In
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex py-1" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Offcanvas -->
+     
+    <div class="offcanvas offcanvas-lg offcanvas-start" id="demo">
+       <div class="offcanvas-header">
+           <p class="h2">Blogs</p>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+       </div>
+       <div class="offcanvas-body">
+          <form class="d-flex py-1">
+	  <i class="bi bi-search"></i>
+              <input class="form-control me-2" type="search" placeholder="Seach blogs">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+           </form>
+           <div class="col-lg-25 m-auto">
+	  <div class="card " style="border:none;">
+                 <div class="card-header p-3 text-light bg-secondary">
+                   <p class="h4 mx-1">Popular Blogs</p>
+                 </div>
+                 <div class="card-body scroll">
+                    <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="education.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="education.html">Education Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="art.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="art.html">Art Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="fitness.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="fitness.html">Fitness Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="entrepreneur.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="entrepreneur.html">Entrepreneur Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="travel.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="travel.html">Travel Blog</a>
+                    </div>
+	        <div class="card d-flex flex-row p-2 mb-3" style="border:none;">
+		<img src="food.jpg" class="rounded" style="max-width:25%;">
+		<a class="h6 p-3 mt-2 text-dark text-decoration-none" href="food.html">Food Blog</a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+       </div>
+    </div>
+
+    <!-- end offcanvas -->
+
+    <div class="container-fluid p-0 mt-4">
+        <!-- Full-width Cover Photo -->
+        <div class="position-relative">
+            <img src="bg1.png" class="img-fluid w-100 bg-dark " alt="Channel Banner">
+            <div class="position-absolute bottom-0 start-0 p-3 text-white  bg-opacity-50 w-100 ">
+                <div class="d-flex align-items-center">
+                    <img src="p3.png" alt="Profile Image" class="rounded-circle me-3 " style="width: 150px; height: 150px; object-fit: cover;">
+                    <div>
+                        <h2 class="h3 mb-1 text-dark">Seth Godlin</h2>
+                        <p class="mb-2 text-dark">Welcome to my Blog! Explore Insightful lessons and innovative teaching tips to enhance your learning experience.</p>
+                        <p class="mb-3 text-dark"><strong>100k Followers</strong></p>
+                        <button class="btn btn-primary">Follow</button>
+		    <a class="btn btn-primary mx-2" href="internform.html">Internship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="container mt-4">
+            <!-- Posts Section -->
+            <section class="mb-4">
+                <h3 class="h4 fw-bolder mb-3">Recent Posts</h3>
+                <div class="list-group d-flex">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1"><img src="p3.png" alt="Profile Image" class="rounded-circle me-3 " style="width: 40px; height: 40px;">Project-Based Learning: Engaging Through Real-World Challenges</h5>
+                        <p class="mb-1">Project-Based Learning (PBL) is an educational approach where students gain knowledge and skills by working on complex, real-world projects. Unlike traditional learning methods, PBL emphasizes active problem-solving and critical thinking. Students collaborate on projects that often involve researching, designing, and presenting solutions to genuine issues. This method helps develop a deeper understanding of the subject matter and enhances skills such as communication and teamwork. PBL prepares students for future academic and professional endeavors by fostering practical application of knowledge and creative problem-solving abilities.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h5 class="mb-1"><img src="p3.png" alt="Profile Image" class="rounded-circle me-3 " style="width: 40px; height: 40px;">Flipped Classroom: Revolutionizing Traditional Teaching</h5>
+                        <p class="mb-1">The Flipped Classroom model reverses the traditional teaching approach by having students first engage with new material at home, often through video lectures or reading assignments. Class time is then dedicated to interactive activities, discussions, and practical exercises that reinforce the learned concepts. This method allows students to learn at their own pace outside of class and use classroom time for hands-on, collaborative learning. It shifts the focus from passive reception of information to active, student-centered exploration and problem-solving. The Flipped Classroom aims to enhance understanding and application of content while promoting more dynamic classroom interactions.</p>
+                    </a>
+                    <!-- Add more posts as needed -->
+                </div>
+            </section>
+	  <button class="btn btn-primary d-block m-auto mb-4" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm"  aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+            </button>
+            <!-- Video Gallery -->
+            <section>
+                <h3 class="h4 fw-bolder mb-3">Video Gallery</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <video class="card-img-top" alt="Video Title" muted autoplay loop><source src="edu1.mp4" type="video/mp4"></video>
+                            <div class="card-body">
+                                <h5 class="card-title">History's Biggest Mysteries Explained</h5>
+                                <p class="card-text">Uncover the truth behind history's most intriguing mysteries.</p>
+                                <p class="card-text"><small class="text-muted">1M views • 1 day ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <video class="card-img-top" alt="Video Title" muted autoplay loop><source src="edu2.mp4" type="video/mp4"></video>
+                            <div class="card-body">
+                                <h5 class="card-title">Fundamentals of Financial Literacy</h5>
+                                <p class="card-text">Get to grips with key concepts of managing and growing your finances</p>
+                                <p class="card-text"><small class="text-muted">500k views • 2 days ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more video cards as needed -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">© 2024 Channel Name. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
