@@ -16,8 +16,8 @@ pipeline {
             steps {
                 script {
                     dir("${env.WORKSPACE}") {
-                        sh 'docker-compose down || true'
-                        sh 'docker-compose up -d --build'
+                        sh 'docker-compose down || true'  // Clean up any existing containers before starting
+                        sh 'docker-compose up -d --build'  // Build and start containers in detached mode
                     }
                 }
             }
@@ -26,19 +26,12 @@ pipeline {
         stage('Verify') {
             steps {
                 script {
-                    sh 'sleep 10'
-                    sh 'curl -I http://localhost:8081 || true'  // Adjust if needed
+                    sh 'sleep 10'  // Wait for services to start
+                    sh 'curl -I http://localhost:8081 || true'  // Check if the service is responding
                 }
             }
         }
     }
 
-    post {
-        always {
-            script {
-                echo 'Cleaning up containers...'
-                sh 'docker-compose down'
-            }
-        }
-    }
+    // Post block is removed to keep containers running after the build
 }
